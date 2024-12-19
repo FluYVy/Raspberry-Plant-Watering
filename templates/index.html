@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Raspberry-Plant-Watering</title>
+        <meta charset="UTF-8">
+        <script>
+            async function get_moisture() {
+                const response = await fetch('/api/moisture');
+                const data = await response.json();
+                return data.moisture;
+            }
+
+            async function get_water_level() {
+                const response = await fetch('/api/waterlevel');
+                const data = await response.json();
+                return data.waterlevel;
+            }
+
+            async function updateValues() {
+                const moisture = await get_moisture();
+                const waterLevel = await get_water_level();
+                document.getElementById('moisture').innerText = `Moisture: ${moisture}%`;
+                document.getElementById('water-container').innerText = `Water Level: ${waterLevel}`;
+            }
+
+            setInterval(updateValues, 10000);
+            updateValues();
+        </script>
+    </head>
+    <body>
+        <h1>Raspberry Plant Watering</h1>
+        <div id="moisture"></div>
+        <div id="water-container"></div>
+    </body>
+</html>
