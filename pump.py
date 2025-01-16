@@ -9,13 +9,23 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(IN1, GPIO.OUT)
 GPIO.setup(IN2, GPIO.OUT)
 
-print("Motor läuft...")
-GPIO.output(IN1, GPIO.HIGH)
-GPIO.output(IN2, GPIO.LOW)
+#PWM für Pumpgeschwindikeit
+pwm = GPIO.PWM(IN1, 100)    #100 Hz Frequenz
+pwm.start(0) 
 
-time.sleep(5)
+def pump_set_speed(speed):   #Geschwindikeit (0-100)
+    GPIO.output(IN2, GPIO.LOW)
+    pwm.ChangeDutyCycle(speed)
 
-print("Motor stoppt...")
-GPIO.output(IN1, GPIO.LOW)
-GPIO.output(IN2, GPIO.LOW)
+def pump_stop():
+    pwm.ChangeDutyCycle(0)
+
+pump_set_speed(30)
+time.sleep(3)
+pump_set_speed(60)
+time.sleep(3)
+pump_set_speed(90)
+time.sleep(3)
+pump_set_speed(100)
+time.sleep(3)
 
