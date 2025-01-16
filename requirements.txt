@@ -1,6 +1,3 @@
 flask
 busio
-adafruit_seesaw.seesaw
-seesaw
-adafruit-seesaw
-busio
+adafruit_seesaw
