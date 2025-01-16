@@ -1,1 +1,4 @@
 flask
+busio
+adafruit_seesaw.seesaw
+seesaw
