@@ -24,8 +24,8 @@ def measure_distance():
 
     t = t_on - t_off
 
-    dist = (t * 34300) / 2
-    return dist
+    dist_cm = (t * 34300) / 2      #Abstand[cm]=(Zeit[s] * Schallgeschwindigkeit[cm/s])/2
+    return dist_cm
 
 while True:
    dist = measure_distance()
