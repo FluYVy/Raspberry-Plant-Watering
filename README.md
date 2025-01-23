@@ -12,7 +12,7 @@ This project allows you to water your favorite plants automatically when they ar
 * Moisture sensor: [Adafruit STEMMA Soil Sensor](https://www.adafruit.com/product/4026)
 * DC-Motor driver: [MX1508](https://de.aliexpress.com/item/1005002431361324.html?gatewayAdapt=glo2deu)
 * Pump: [Diaphragm pump 6V](https://de.aliexpress.com/item/1005004761121166.html?spm=a2g0o.order_list.order_list_main.5.27f25c5fnGL01o&gatewayAdapt=glo2deu)
-* Ultrasonic distance sensor: [HC-SR04](https://www.adafruit.com/product/4026)
+* Ultrasonic distance sensor: [HC-SR04](https://www.sparkfun.com/ultrasonic-distance-sensor-3-3v-hc-sr04.html)
 
 
 
