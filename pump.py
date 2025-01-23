@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-IN1 = 2
-IN2 = 3
+IN1 = 14
+IN2 = 15
 
 GPIO.setmode(GPIO.BCM)
 
