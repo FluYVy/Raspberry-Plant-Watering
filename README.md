@@ -1,5 +1,5 @@
 # Raspberry-Plant-Watering
-*~a HTL Rankweil project~*
+*a HTL Rankweil project*
 
 This project allows you to water your favorite plants automatically when they are thirsty. The heart of the project is a Raspberry Pi 4B, which functions as a web server, controls the pump, and reads the sensor values. And there is also a web interface, which provides you with a good overview of your plants' conditions.
 
