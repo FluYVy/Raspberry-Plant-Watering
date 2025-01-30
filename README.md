@@ -31,3 +31,31 @@ cd raspberry-plant-watering
 ```
 pip install -r requirements.txt
 ```
+
+## Connecting to the Web Server
+
+**Starting the Flask Server**\
+To start the Flask web server, use the following command:
+```bash
+flask --app server.py run --host=0.0.0.0
+```
+\
+**Running on a Different Port (Optional)**\
+By default, Flask runs on port 5000. To use a different port (e.g., 8080), run:
+```bash
+flask --app server.py run --host=0.0.0.0 --port=8080
+```
+\
+**Accessing the Web Server**
+
+**From the Raspberry Pi itself**\
+Open a browser and go to:
+```
+http://127.0.0.1:5000
+```
+\
+**From Another Device on the Same Network**\
+Use the Raspberry Pi's local IP:
+```
+http://<raspberry_pi_ip>:5000
+```
