@@ -14,20 +14,34 @@ This project allows you to water your favorite plants automatically when they ar
 * Pump: [Diaphragm pump 6V](https://de.aliexpress.com/item/1005004761121166.html?spm=a2g0o.order_list.order_list_main.5.27f25c5fnGL01o&gatewayAdapt=glo2deu)
 * Ultrasonic distance sensor: [HC-SR04](https://www.sparkfun.com/ultrasonic-distance-sensor-3-3v-hc-sr04.html)
 
+## Required Software
+* Raspberry Pi OS 
+* Python 3
+* Flask (for the web interface)
 
 ## Installation Steps:
 
 **1. Update and Setup your Raspberry Pi**
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip git
 ```
 **2. Clone the project repository**
-```
-git clone https://github.com/your-repo/raspberry-plant-watering.git
-cd raspberry-plant-watering
+```bash
+git clone https://github.com/FluYVy/Raspberry-Plant-Watering.git
+cd Raspberry-Plant-Watering
 ```
 **3. Install required Python libraries**
-```
+```bash
 pip install -r requirements.txt
 ```
+-> Sometimes you need to write ```pip3``` instead of ```pip```
+
+## Future Improvements
+* Smart Home Integration: MQTT, Home Assistant, Google Assistant
+* Multi-Plant Support: Independent moisture sensors and pumps for multiple plants
+
+## References
+* Adafruit STEMMA Sensor Docs: https://learn.adafruit.com/adafruit-stemma-soil-sensor
+* Flask Documentation: https://flask.palletsprojects.com
+* Raspberry Pi Documentation: https://www.raspberrypi.com/documentation/
