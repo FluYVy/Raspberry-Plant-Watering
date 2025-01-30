@@ -38,7 +38,7 @@ pip install -r requirements.txt
 -> Sometimes you need to write ```pip3``` instead of ```pip```
 
 ## Connecting to the Web Server
-
+![Screenshot of the User Interface](image.png)
 **Starting the Flask Server**\
 To start the Flask web server, use the following command:
 ```bash
